@@ -769,10 +769,15 @@ ul {
     padding: 50px 0;
 }
 
+.page-brand-logo-outer-box .slick-track {
+    display: flex;
+}
+
 .brand-logo-inner-box {
     display: flex !important;
     align-items: center;
     justify-content: center;
+    height: auto;
 }
 
 .brand-logo {
