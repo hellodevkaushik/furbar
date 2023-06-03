@@ -52,7 +52,6 @@ $(".page-brand-logo-outer-box").slick({
     speed: 8000,
     pauseOnHover: false,
     cssEase: 'linear',
-    draggable: true,
     responsive: [
         {
             breakpoint: 992,
