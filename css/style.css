@@ -769,6 +769,10 @@ ul {
     padding: 50px 0;
 }
 
+.page-brand-logo-outer-box .slick-list {
+    overflow: unset;
+}
+
 .page-brand-logo-outer-box .slick-track {
     display: flex;
 }
