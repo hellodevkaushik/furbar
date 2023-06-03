@@ -23,7 +23,6 @@ $(window).scroll(function(){
 $(".new-slider-inner-box").slick({
     dots: false,
     arrows: true,
-    Infinity: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -47,7 +46,7 @@ $(".page-brand-logo-outer-box").slick({
     dots: false,
     arrows: false,
     Infinity: true,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     slidesToShow: 5,
     responsive: [
         {
@@ -108,7 +107,7 @@ $(".page-drawing-banner-outer").slick({
     dots: false,
     arrows: false,
     Infinity: true,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     slidesToShow: 4,
     responsive: [
         {
@@ -156,11 +155,11 @@ $(".page-blog-section-bottom").slick({
 
 // counter section
 
-jQuery(document).ready(function ($) {
-    var counted = 0;
+if($('#counter').length) {
+var counted = 0;
   $(window).scroll(function () {
 
-    var oTop = $("#counter").offset().top - window.innerHeight;
+    var oTop = $("#counter").offset().top-window.innerHeight;
     if (counted == 0 && $(window).scrollTop() > oTop) {
       $(".counter-value").each(function () {
         var $this = $(this),
@@ -188,10 +187,58 @@ jQuery(document).ready(function ($) {
       counted = 1;
     }
   });
-});
+}
+
+
+// about-page-slider
 
 $(".about-page-slider-inner").slick({
     dots: true,
     arrows: false,
     Infinity: true,
+});
+
+
+// -----JS for Price Range slider-----
+
+// $(function() {
+// 	$( "#slider-range" ).slider({
+// 	  range: true,
+// 	  min: 16,
+// 	  max: 500,
+// 	  values: [ 130, 250 ],
+// 	  slide: function( event, ui ) {
+// 		$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+// 	  }
+// 	});
+// 	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+// 	  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+// });
+
+// $(document).ready(function(){
+//     $('.header-search').on('click',function(){
+//         $('.search-bar-outer').slideToggle();
+//     });
+// });
+
+// product-details page
+
+$(".product-img-slider-header").slick({
+    infinite: false,
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    asNavFor: '.product-img-slider-bottom-click',
+});
+
+$(".product-img-slider-bottom-click").slick({
+    infinite: false,
+    dots: false,
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.product-img-slider-header',
+    focusOnSelect: true,
 });
