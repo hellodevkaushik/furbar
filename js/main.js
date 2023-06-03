@@ -48,6 +48,11 @@ $(".page-brand-logo-outer-box").slick({
     Infinity: true,
     slidesToScroll: 1,
     slidesToShow: 5,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 8000,
+    pauseOnHover: false,
+    cssEase: 'linear'
     responsive: [
         {
             breakpoint: 992,
