@@ -767,6 +767,7 @@ ul {
     width: 100%;
     background-color: #f2a100;
     padding: 50px 0;
+    overflow: hidden;
 }
 
 .page-brand-logo-outer-box .slick-list {
