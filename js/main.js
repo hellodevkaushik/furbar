@@ -45,7 +45,6 @@ $(".new-slider-inner-box").slick({
 $(".page-brand-logo-outer-box").slick({
     dots: false,
     arrows: false,
-    Infinity: true,
     slidesToScroll: 1,
     slidesToShow: 5,
     autoplay: true,
@@ -53,6 +52,7 @@ $(".page-brand-logo-outer-box").slick({
     speed: 8000,
     pauseOnHover: false,
     cssEase: 'linear',
+    draggable: true,
     responsive: [
         {
             breakpoint: 992,
@@ -89,7 +89,6 @@ $backToTop.on('click', function(e) {
 $(".best-sale-products-outer-box").slick({
     dots: false,
     arrows: true,
-    Infinity: true,
     slidesToScroll: 1,
     slidesToShow: 4,
     responsive: [
@@ -111,7 +110,6 @@ $(".best-sale-products-outer-box").slick({
 $(".page-drawing-banner-outer").slick({
     dots: false,
     arrows: false,
-    Infinity: true,
     slidesToScroll: 1,
     slidesToShow: 4,
     responsive: [
@@ -139,7 +137,6 @@ $(".page-drawing-banner-outer").slick({
 $(".page-blog-section-bottom").slick({
     dots: false,
     arrows: true,
-    Infinity: true,
     slidesToScroll: 1,
     slidesToShow: 3,
     responsive: [
@@ -200,7 +197,6 @@ var counted = 0;
 $(".about-page-slider-inner").slick({
     dots: true,
     arrows: false,
-    Infinity: true,
 });
 
 
